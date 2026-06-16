@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ============ SEO: EDIT THESE ============ -->
+<title>Nana's Braiding | Box Braids, Knotless & Cornrows in Boston, MA</title>
+<meta name="description" content="Nana's Braiding is a Boston, MA braiding salon specializing in box braids, knotless braids, cornrows, twists, and locs. Protective styles done with care. Book your appointment today." />
+<meta name="keywords" content="braiding salon Boston, box braids Boston, knotless braids Boston MA, cornrows Boston, hair braiding near me, protective styles Boston, Nana's Braiding" />
+<meta name="author" content="Nana's Braiding" />
+<link rel="canonical" href="https://www.nanasbraiding.com/" />
+<meta name="robots" content="index, follow" />
+
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="business.business" />
+<meta property="og:title" content="Nana's Braiding | Braiding Salon in Boston, MA" />
+<meta property="og:description" content="Box braids, knotless braids, cornrows, twists & locs in Boston, MA. Protective styles done with care." />
+<meta property="og:url" content="https://www.nanasbraiding.com/" />
+<meta property="og:image" content="https://www.nanasbraiding.com/images/social-share.jpg" />
+<meta property="og:site_name" content="Nana's Braiding" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Nana's Braiding | Braiding Salon in Boston, MA" />
+<meta name="twitter:description" content="Box braids, knotless braids, cornrows, twists & locs in Boston, MA." />
+
+<!-- LocalBusiness structured data (Google rich results). EDIT phone, address, hours, geo. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Nana's Braiding",
+  "image": "https://www.nanasbraiding.com/images/social-share.jpg",
+  "url": "https://www.nanasbraiding.com/",
+  "telephone": "+1-617-000-0000",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[STREET ADDRESS]",
+    "addressLocality": "Boston",
+    "addressRegion": "MA",
+    "postalCode": "[ZIP]",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "42.3601",
+    "longitude": "-71.0589"
+  },
+  "sameAs": [
+    "https://www.instagram.com/nanasbraiding/"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --espresso: #2B1B12;
+    --cocoa:    #3E2A1E;
+    --honey:    #C2873B;
+    --honey-lt: #E0B574;
+    --shea:     #F6EFE6;
+    --shea-soft:#FBF7F1;
+    --clay:     #A8553A;
+    --ink:      #221710;
+    --muted:    #6E5D50;
+    --line:     #E7DCCD;
+
+    --display: "Fraunces", Georgia, serif;
+    --body: "Figtree", system-ui, -apple-system, sans-serif;
+
+    --maxw: 1180px;
+    --r: 18px;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  body {
+    margin: 0;
+    font-family: var(--body);
+    color: var(--ink);
+    background: var(--shea);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.08; margin: 0; letter-spacing: -0.01em; }
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+  .eyebrow {
+    font-family: var(--body);
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--honey);
+    margin: 0 0 14px;
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--body); font-weight: 600; font-size: 0.98rem;
+    padding: 14px 26px; border-radius: 999px; text-decoration: none;
+    border: 1.5px solid transparent; cursor: pointer; transition: transform .18s ease, background .2s ease, color .2s ease;
+  }
+  .btn-primary { background: var(--honey); color: var(--espresso); }
+  .btn-primary:hover { transform: translateY(-2px); background: var(--honey-lt); }
+  .btn-ghost { background: transparent; color: var(--shea); border-color: rgba(246,239,230,.4); }
+  .btn-ghost:hover { border-color: var(--honey); color: var(--honey-lt); }
+  .btn-dark { background: var(--espresso); color: var(--shea); }
+  .btn-dark:hover { transform: translateY(-2px); background: var(--cocoa); }
+
+  /* ---------- Header ---------- */
+  header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(43,27,18,.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(194,135,59,.25);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 74px; }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--shea); }
+  .brand .mark { width: 34px; height: 34px; flex: none; }
+  .brand b { font-family: var(--display); font-weight: 600; font-size: 1.32rem; letter-spacing: -.02em; }
+  .brand span { color: var(--honey-lt); }
+  .nav-links { display: flex; align-items: center; gap: 30px; }
+  .nav-links a { color: var(--shea); text-decoration: none; font-size: .96rem; font-weight: 500; opacity: .85; transition: opacity .2s, color .2s; }
+  .nav-links a:hover { opacity: 1; color: var(--honey-lt); }
+  .nav-cta { display: flex; align-items: center; gap: 14px; }
+  .ig-link { display: inline-flex; color: var(--shea); opacity: .85; }
+  .ig-link:hover { opacity: 1; color: var(--honey-lt); }
+  .menu-btn { display: none; background: none; border: 0; color: var(--shea); cursor: pointer; padding: 6px; }
+
+  /* ---------- Hero ---------- */
+  .hero { background: var(--espresso); color: var(--shea); position: relative; overflow: hidden; }
+  .hero .wrap { display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; padding-top: 76px; padding-bottom: 84px; }
+  .hero h1 { font-size: clamp(2.6rem, 6vw, 4.4rem); }
+  .hero h1 em { font-style: italic; color: var(--honey-lt); }
+  .hero p.lead { font-size: 1.12rem; color: #D9CBBA; max-width: 30ch; margin: 22px 0 32px; }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+  .hero-meta { display: flex; gap: 28px; margin-top: 38px; padding-top: 26px; border-top: 1px solid rgba(246,239,230,.16); }
+  .hero-meta .num { font-family: var(--display); font-size: 1.7rem; color: var(--honey-lt); }
+  .hero-meta small { display: block; color: #C3B3A2; font-size: .82rem; letter-spacing: .04em; }
+
+  /* Hero image placeholder */
+  .hero-photo {
+    position: relative; border-radius: 24px; overflow: hidden;
+    aspect-ratio: 4/5; background: linear-gradient(150deg, var(--cocoa), #1d120b);
+    border: 1px solid rgba(194,135,59,.3);
+  }
+  .photo-ph { width: 100%; height: 100%; display: grid; place-content: center; text-align: center; color: #B49B82; }
+  .photo-ph span { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; opacity: .8; padding: 0 24px; }
+  .photo-ph svg { margin: 0 auto 10px; opacity: .55; }
+
+  /* ---------- Braid divider (signature) ---------- */
+  .braid-divider { display: block; width: 100%; height: 26px; }
+  .braid-divider path { fill: none; stroke: var(--honey); stroke-width: 3.5; opacity: .5; }
+
+  /* ---------- Section base ---------- */
+  section { padding: 92px 0; }
+  .sec-head { max-width: 640px; margin-bottom: 48px; }
+  .sec-head h2 { font-size: clamp(2rem, 4vw, 2.9rem); }
+  .sec-head p { color: var(--muted); font-size: 1.05rem; margin-top: 14px; }
+
+  /* ---------- Services ---------- */
+  #services { background: var(--shea-soft); }
+  .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .svc {
+    background: #fff; border: 1px solid var(--line); border-radius: var(--r);
+    padding: 30px 26px; transition: transform .2s ease, box-shadow .2s ease, border-color .2s;
+  }
+  .svc:hover { transform: translateY(-4px); box-shadow: 0 18px 40px -24px rgba(43,27,18,.4); border-color: var(--honey); }
+  .svc .ic { width: 46px; height: 46px; border-radius: 12px; background: var(--shea); display: grid; place-content: center; color: var(--clay); margin-bottom: 18px; }
+  .svc h3 { font-size: 1.32rem; }
+  .svc p { color: var(--muted); font-size: .96rem; margin: 10px 0 16px; }
+  .svc .price { font-family: var(--display); color: var(--clay); font-size: 1.05rem; font-weight: 600; }
+
+  /* ---------- Gallery ---------- */
+  #gallery { background: var(--shea); }
+  .gal-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .gal-grid .tall { grid-row: span 2; }
+  .gal-cell {
+    border-radius: 14px; overflow: hidden; background: linear-gradient(150deg, #efe4d4, #e3d3bf);
+    aspect-ratio: 1/1; position: relative; display: grid; place-content: center; text-align: center;
+    border: 1px solid var(--line);
+  }
+  .gal-cell.tall { aspect-ratio: 1/2; }
+  .gal-cell img { width: 100%; height: 100%; object-fit: cover; }
+  .gal-cell .tag { color: var(--clay); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; padding: 0 12px; }
+  .gal-note { text-align: center; margin-top: 28px; color: var(--muted); font-size: .92rem; }
+
+  /* ---------- Instagram band ---------- */
+  #insta { background: var(--cocoa); color: var(--shea); }
+  .insta-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+  #insta h2 { font-size: clamp(2rem, 4vw, 2.8rem); }
+  #insta p { color: #D9CBBA; margin: 16px 0 28px; }
+  .embed-box {
+    border: 1px dashed rgba(246,239,230,.35); border-radius: var(--r);
+    padding: 40px 28px; text-align: center; background: rgba(0,0,0,.15);
+  }
+  .embed-box code { background: rgba(0,0,0,.3); padding: 2px 7px; border-radius: 6px; font-size: .82rem; color: var(--honey-lt); }
+  .embed-box p { color: #C3B3A2; font-size: .9rem; }
+
+  /* ---------- About ---------- */
+  #about { background: var(--shea-soft); }
+  .about-inner { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: center; }
+  #about h2 { font-size: clamp(2rem, 4vw, 2.9rem); }
+  #about p { color: var(--muted); font-size: 1.05rem; margin-top: 18px; }
+  .about-photo { border-radius: 22px; aspect-ratio: 4/5; background: linear-gradient(150deg, #efe4d4, #ddc9b1); display: grid; place-content: center; color: var(--clay); border: 1px solid var(--line); }
+
+  /* ---------- Reviews ---------- */
+  #reviews { background: var(--espresso); color: var(--shea); }
+  #reviews .sec-head h2 { color: var(--shea); }
+  .rev-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+  .rev { background: rgba(246,239,230,.05); border: 1px solid rgba(194,135,59,.2); border-radius: var(--r); padding: 28px; }
+  .rev .stars { color: var(--honey-lt); letter-spacing: 2px; margin-bottom: 14px; }
+  .rev p { color: #E3D6C6; font-style: italic; font-family: var(--display); font-size: 1.08rem; }
+  .rev .who { margin-top: 16px; font-weight: 600; color: var(--honey-lt); font-style: normal; font-family: var(--body); font-size: .92rem; }
+
+  /* ---------- Contact ---------- */
+  #contact { background: var(--shea); }
+  .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+  .contact-card { background: #fff; border: 1px solid var(--line); border-radius: var(--r); padding: 34px; }
+  .contact-card h3 { font-size: 1.5rem; margin-bottom: 20px; }
+  .ci { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 18px; }
+  .ci .ic { color: var(--honey); flex: none; margin-top: 3px; }
+  .ci b { display: block; }
+  .ci span, .ci a { color: var(--muted); text-decoration: none; }
+  .ci a:hover { color: var(--clay); }
+  .map-ph { border-radius: var(--r); min-height: 320px; background: linear-gradient(150deg,#e9ddca,#dcc8af); display: grid; place-content: center; text-align:center; color: var(--clay); border: 1px solid var(--line); padding: 24px; }
+
+  /* ---------- Footer ---------- */
+  footer { background: var(--espresso); color: #C3B3A2; padding: 54px 0 30px; }
+  .foot-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; padding-bottom: 30px; border-bottom: 1px solid rgba(246,239,230,.12); }
+  .foot-top .brand b { color: var(--shea); }
+  footer .links { display: flex; gap: 24px; flex-wrap: wrap; }
+  footer .links a { color: #C3B3A2; text-decoration: none; font-size: .94rem; }
+  footer .links a:hover { color: var(--honey-lt); }
+  .foot-bottom { padding-top: 24px; font-size: .85rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+
+  /* ---------- Reveal animation ---------- */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+  :focus-visible { outline: 3px solid var(--honey); outline-offset: 2px; border-radius: 4px; }
+
+  /* ---------- Mobile ---------- */
+  @media (max-width: 900px) {
+    .hero .wrap { grid-template-columns: 1fr; gap: 40px; padding-top: 56px; padding-bottom: 60px; }
+    .svc-grid { grid-template-columns: 1fr 1fr; }
+    .insta-inner, .about-inner, .contact-inner { grid-template-columns: 1fr; gap: 36px; }
+    .rev-grid { grid-template-columns: 1fr; }
+    .gal-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 620px) {
+    section { padding: 64px 0; }
+    .nav-links { display: none; }
+    .menu-btn { display: inline-flex; }
+    .nav-links.open {
+      display: flex; flex-direction: column; position: absolute; top: 74px; left: 0; right: 0;
+      background: var(--espresso); padding: 18px 24px 26px; gap: 18px; border-bottom: 1px solid rgba(194,135,59,.25);
+    }
+    .svc-grid { grid-template-columns: 1fr; }
+    .hero-meta { flex-wrap: wrap; gap: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Nana's Braiding home">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <path d="M8 4c6 6 18 6 24 0M8 14c6 6 18 6 24 0M8 24c6 6 18 6 24 0M8 34c6 6 18 6 24 0"
+              stroke="#C2873B" stroke-width="2.6" stroke-linecap="round"/>
+      </svg>
+      <b>Nana's<span>Braiding</span></b>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Visit</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="ig-link" href="https://www.instagram.com/nanasbraiding/" target="_blank" rel="noopener" aria-label="Nana's Braiding on Instagram">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a class="btn btn-primary" href="#contact">Book now</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Braiding Salon · Boston, MA</p>
+      <h1>Protective styles, <em>woven with care.</em></h1>
+      <p class="lead">Box braids, knotless, cornrows, twists and locs — done by hands that treat every head like family.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">Book an appointment</a>
+        <a class="btn btn-ghost" href="#gallery">See the work</a>
+      </div>
+      <div class="hero-meta">
+        <div><span class="num">10+</span><small>Years braiding</small></div>
+        <div><span class="num">8</span><small>Signature styles</small></div>
+        <div><span class="num">5.0</span><small>★ Client rating</small></div>
+      </div>
+    </div>
+
+    <div class="hero-photo reveal">
+      <!-- REPLACE: drop a hero photo here -> <img src="images/hero.jpg" alt="Fresh knotless braids by Nana's Braiding"> -->
+      <div class="photo-ph">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.8"/><path d="M21 15l-5-4-9 8"/></svg>
+        <span>Add your best hero photo here<br>(images/hero.jpg)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg class="braid-divider" viewBox="0 0 1200 26" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M0 13 C 60 -6, 120 32, 180 13 S 300 -6, 360 13 S 480 32, 540 13 S 660 -6, 720 13 S 840 32, 900 13 S 1020 -6, 1080 13 S 1200 32, 1200 13"/>
+  <path d="M0 13 C 60 32, 120 -6, 180 13 S 300 32, 360 13 S 480 -6, 540 13 S 660 32, 720 13 S 840 -6, 900 13 S 1020 32, 1080 13 S 1200 -6, 1200 13"/>
+</svg>
+
+<!-- ============ SERVICES ============ -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">What we do</p>
+      <h2>Styles built to protect and last.</h2>
+      <p>Every appointment starts with a scalp-first approach — clean parts, gentle tension, styles that hold for weeks. Prices below are starting points; final quote depends on length, size, and add-ons.</p>
+    </div>
+
+    <div class="svc-grid">
+      <!-- EDIT: service names, descriptions & starting prices -->
+      <article class="svc reveal">
+        <div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3v18M12 3v18M19 3v18"/></svg></div>
+        <h3>Box Braids</h3>
+        <p>Classic, clean-parted box braids in any length and size, from jumbo to micro.</p>
+        <div class="price">from $150</div>
+      </article>
+
+      <article class="svc reveal">
+        <div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4c5 4 11 4 16 0M4 12c5 4 11 4 16 0M4 20c5 4 11 4 16 0"/></svg></div>
+        <h3>Knotless Braids</h3>
+        <p>Lightweight, tension-free roots for a natural fall and a comfortable install.</p>
+        <div class="price">from $180</div>
+      </article>
+
+      <article class="svc reveal">
+        <div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div>
+        <h3>Cornrows &amp; Feed-ins</h3>
+        <p>Straight-backs, freestyle parts, and intricate designs for any occasion.</p>
+        <div class="price">from $90</div>
+      </article>
+
+      <article class="svc reveal">
+        <div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3c0 6 0 12 0 18M12 3c0 6 0 12 0 18M18 3c0 6 0 12 0 18"/></svg></div>
+        <h3>Twists</h3>
+        <p>Passion, Senegalese, and two-strand twists with a soft, full finish.</p>
+        <div class="price">from $140</div>
+      </article>
+
+      <article class="svc reveal">
+        <div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M9 9l6 6"/></svg></div>
+        <h3>Locs &amp; Retwist</h3>
+        <p>Starter locs, maintenance, retwists, and styling for established locs.</p>
+        <div class="price">from $80</div>
+      </article>
+
+      <article class="svc reveal">
+        <div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/></svg></div>
+        <h3>Kids' Styles</h3>
+        <p>Gentle, age-appropriate braids and beads for the little ones.</p>
+        <div class="price">from $60</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">The work</p>
+      <h2>A look at recent styles.</h2>
+      <p>Curated favorites from the chair. For the full, always-updating feed, follow along on Instagram.</p>
+    </div>
+
+    <!-- REPLACE each cell with: <img src="images/gallery-1.jpg" alt="Knotless braids, mid-back length"> -->
+    <div class="gal-grid">
+      <div class="gal-cell tall reveal"><span class="tag">Photo 1<br>(tall)</span></div>
+      <div class="gal-cell reveal"><span class="tag">Photo 2</span></div>
+      <div class="gal-cell reveal"><span class="tag">Photo 3</span></div>
+      <div class="gal-cell reveal"><span class="tag">Photo 4</span></div>
+      <div class="gal-cell reveal"><span class="tag">Photo 5</span></div>
+      <div class="gal-cell tall reveal"><span class="tag">Photo 6<br>(tall)</span></div>
+      <div class="gal-cell reveal"><span class="tag">Photo 7</span></div>
+      <div class="gal-cell reveal"><span class="tag">Photo 8</span></div>
+    </div>
+    <p class="gal-note">Pick 6–8 of your strongest before/after or finished-style shots from Instagram, export them, and drop them into an <code>images/</code> folder.</p>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM ============ -->
+<section id="insta">
+  <div class="wrap insta-inner">
+    <div class="reveal">
+      <p class="eyebrow">@nanasbraiding</p>
+      <h2>The freshest work lands here first.</h2>
+      <p>New installs go up on Instagram as they happen. Embed the live feed so this section updates itself — no manual uploads, ever.</p>
+      <a class="btn btn-primary" href="https://www.instagram.com/nanasbraiding/" target="_blank" rel="noopener">Follow on Instagram</a>
+    </div>
+    <div class="embed-box reveal">
+      <p style="margin-top:0"><strong style="color:var(--honey-lt)">Live feed goes here.</strong></p>
+      <p>Paste an embed widget from a free service such as <code>elfsight.com</code>, <code>lightwidget.com</code>, or <code>behold.so</code> in place of this box. They pull <code>@nanasbraiding</code> automatically and keep it current.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap about-inner">
+    <div class="about-photo reveal" aria-hidden="true">
+      <span style="font-size:.78rem;letter-spacing:.08em;text-transform:uppercase">Add a portrait<br>(images/nana.jpg)</span>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">Our story</p>
+      <h2>Braiding the way Nana taught us.</h2>
+      <!-- EDIT this with the real story -->
+      <p>Nana's Braiding started with a simple belief: hair care is care, full stop. Every style is installed with patience, the right tension, and a scalp-first mindset, so your braids look good the day you leave and stay healthy for weeks after.</p>
+      <p>Based in Boston, we welcome first-timers and regulars alike — natural textures, all lengths, all ages. Come as you are; leave feeling like yourself.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Kind words</p>
+      <h2>What clients say.</h2>
+    </div>
+    <!-- EDIT with real reviews (or pull from Google / Instagram comments with permission) -->
+    <div class="rev-grid">
+      <div class="rev reveal"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>“Gentlest install I've ever had and my knotless braids lasted over a month. Already rebooked.”</p><div class="who">— [Client name]</div></div>
+      <div class="rev reveal"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>“So neat and so fast. My daughter's beads were perfect and she actually sat still the whole time.”</p><div class="who">— [Client name]</div></div>
+      <div class="rev reveal"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>“Found my braider in Boston. The parts are clean, the price is fair, the vibe is family.”</p><div class="who">— [Client name]</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Visit us</p>
+      <h2>Book your seat.</h2>
+      <p>Reach out to check availability and lock in your style. Walk-ins welcome when the chair's open.</p>
+    </div>
+    <div class="contact-inner">
+      <div class="contact-card reveal">
+        <h3>Get in touch</h3>
+        <!-- EDIT: real phone, address, hours, booking link -->
+        <div class="ci"><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><div><b>Call or text</b><a href="tel:+16170000000">(617) 000-0000</a></div></div>
+        <div class="ci"><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><b>Studio</b><span>[Street address], Boston, MA [ZIP]</span></div></div>
+        <div class="ci"><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Hours</b><span>Mon–Sat, 9am–7pm · Sun by appointment</span></div></div>
+        <div class="ci"><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></span><div><b>Instagram</b><a href="https://www.instagram.com/nanasbraiding/" target="_blank" rel="noopener">@nanasbraiding</a></div></div>
+        <a class="btn btn-dark" style="margin-top:8px" href="https://www.instagram.com/nanasbraiding/" target="_blank" rel="noopener">Message to book</a>
+      </div>
+      <div class="map-ph reveal">
+        <span style="font-size:.82rem;letter-spacing:.06em">Embed a Google Map here<br>(Google Maps → Share → Embed a map → paste the &lt;iframe&gt;)</span>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a href="#top" class="brand" style="color:var(--shea)">
+        <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M8 4c6 6 18 6 24 0M8 14c6 6 18 6 24 0M8 24c6 6 18 6 24 0M8 34c6 6 18 6 24 0" stroke="#C2873B" stroke-width="2.6" stroke-linecap="round"/></svg>
+        <b>Nana's<span style="color:var(--honey-lt)">Braiding</span></b>
+      </a>
+      <nav class="links">
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Visit</a>
+        <a href="https://www.instagram.com/nanasbraiding/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> Nana's Braiding · Boston, MA</span>
+      <span>Braiding salon · Box braids · Knotless · Cornrows · Twists · Locs</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Mobile menu
+  var btn = document.getElementById('menuBtn');
+  var links = document.getElementById('navLinks');
+  btn.addEventListener('click', function () {
+    var open = links.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  links.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') { links.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }
+  });
+
+  // Scroll reveal
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+</script>
+</body>
+</html>
